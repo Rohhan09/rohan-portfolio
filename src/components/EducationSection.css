@@ -1,0 +1,49 @@
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.edu-degree {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--paper);
+  margin: 0;
+}
+
+.edu-dates {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--amber);
+  margin: 0;
+}
+
+.edu-org {
+  font-size: 14px;
+  color: var(--paper-dim);
+  margin: 4px 0 24px;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+
+.cert-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--paper-dim);
+}
+
+.cert-item .skill-check {
+  color: var(--pass);
+  font-size: 12px;
+  flex-shrink: 0;
+}

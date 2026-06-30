@@ -1,0 +1,132 @@
+.hero {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.hero-console {
+  background: var(--ink-2);
+  border: 1px solid var(--rule-strong);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 420px;
+}
+
+.console-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--rule);
+}
+
+.console-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--fail);
+  opacity: 0.7;
+}
+
+.console-title {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--paper-dim);
+}
+
+.console-body {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.check-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.check-status {
+  width: 38px;
+  flex-shrink: 0;
+  letter-spacing: 0.05em;
+}
+
+.status-pending {
+  color: var(--paper-dim);
+}
+
+.status-pass {
+  color: var(--pass);
+  font-weight: 700;
+}
+
+.check-label {
+  color: var(--paper-dim);
+}
+
+.hero-identity {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.identity-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--amber);
+  letter-spacing: 0.04em;
+  margin: 0 0 12px;
+}
+
+.hero-identity h1 {
+  font-size: clamp(40px, 7vw, 64px);
+  margin: 0 0 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--paper);
+}
+
+.hero-summary {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--paper-dim);
+  max-width: 560px;
+  margin: 0 0 24px;
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.meta-item {
+  color: var(--paper);
+}
+
+.meta-divider {
+  color: var(--rule-strong);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 40px;
+  }
+  .hero-console {
+    max-width: 100%;
+  }
+}

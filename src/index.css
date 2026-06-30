@@ -1,0 +1,59 @@
+:root {
+  --ink: #0b1220;
+  --ink-2: #0f1729;
+  --paper: #e8e6dd;
+  --paper-dim: #a8a59a;
+  --amber: #d4a24c;
+  --amber-dim: #8a6a30;
+  --pass: #5fa88c;
+  --fail: #c1554a;
+  --rule: rgba(232, 230, 221, 0.12);
+  --rule-strong: rgba(232, 230, 221, 0.22);
+
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+  --sans: 'Inter', -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--amber);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  background: var(--amber);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

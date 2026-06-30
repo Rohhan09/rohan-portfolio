@@ -1,0 +1,90 @@
+.role-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.role-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: var(--paper);
+}
+
+.role-org {
+  font-size: 14px;
+  color: var(--paper-dim);
+  margin: 0;
+}
+
+.role-dates {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--amber);
+  margin: 0;
+}
+
+.assertions {
+  display: flex;
+  flex-direction: column;
+}
+
+.assertion {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.assertion:last-child {
+  border-bottom: none;
+}
+
+.assertion-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.result-badge {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--pass);
+  border: 1px solid var(--pass);
+  border-radius: 3px;
+  padding: 1px 6px;
+  letter-spacing: 0.04em;
+}
+
+.suite-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--paper);
+}
+
+.metric-pill {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--amber);
+  margin-left: auto;
+}
+
+.assertion-detail {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--paper-dim);
+  margin: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 640px) {
+  .metric-pill {
+    margin-left: 0;
+  }
+}
